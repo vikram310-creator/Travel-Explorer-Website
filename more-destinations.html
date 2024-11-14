@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Destinations - Travel Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #4db351;
+    color: white;
+    padding: 16px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}   
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fHBhcmlzfGVufDB8fHx8MTY0MjY0MjYyNQ&ixlib=rb-1.2.1&q=80&w=1200');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 30;
+    margin-bottom: 32px;
+}
+.destinations {
+    padding: 64px 80px;
+    text-align: center;
+}
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.destination-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s;
+        }
+.destination-card:hover {
+    transform: scale(1.05);
+}
+.destination-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #007BFF; 
+}
+footer {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.cta-button {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+}
+.cta-button:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Travel Explorer</div>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="project.html#destinations">Destinations</a></li>
+                <li><a href="project.html#about">About</a></li>
+                <li><a href="project.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <h1>Explore the World</h1>
+        <p>Your adventure starts here. Discover amazing places to visit.</p>
+        <a href="#destinations" class="cta-button">Discover Now</a>
+    </section>
+
+    <section class="destinations">
+        <h2>More Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/-VsmCKAP41PfNBUaIaCw1JM-mdHGcccUCPxk0OsD1xo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzM5LzM1LzM0/LzM2MF9GXzM5MzUz/NDQ2X1Y2b3hFcEhj/dlg4S3RJb2thdDJp/dGt1ekdGQ05vRFZB/LmpwZw" alt="Barcelona">
+                <h3>Barcelona</h3>
+                <p>Famous for its art and architecture.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/jXgbtGk-sbC7ALcceZs2Pe-lW087AQqBNN8gacVzKDo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTIx/ODE4NTMwL3Bob3Rv/L3JvbWUtaXRhbHku/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWFpU0xHX2VFZzdI/UERyaTJ1LVFPbktB/UTVRbmtSYVF3X01T/YjZQdTFlbUE9" alt="Rome">
+                <h3>Rome</h3>
+                <p>The Eternal City with rich history.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/OiC-ckrJxhTW08j2FhfqhxvFIIuKSoRkDQStR7lwAYs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU1/NDQ1MzEyL3Bob3Rv/L2xvbmRvbi1vbi10/aGUtbW92ZS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9ZzRD/bEwydGpIQTJOSm5o/M3RlMmM5ZFM5ZHVq/WGs3QkJ6WDBhYU4z/OGRVcz0" alt="London">
+                <h3>London</h3>
+                <p>A vibrant city with a mix of history and modernity.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/53Ppa-vel0iHsb8KxP-CjI7DK3m_glU2NtGo2n4ZYPU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cGxhbmV0d2FyZS5j/b20vd3BpbWFnZXMv/MjAyMS8xMS91bml0/ZWQtYXJhYi1lbWly/YXRlcy1kdWJhaS1p/bi1waWN0dXJlcy1i/ZWF1dGlmdWwtcGxh/Y2VzLXRvLXBob3Rv/Z3JhcGgtZHViYWkt/ZnJhbWUuanBn" alt="Dubai">
+                <h3>Dubai</h3>
+                <p>Known for luxury shopping and ultramodern architecture.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/-eopHNWZ2OvC51Pf_HGWYXLCYkHpTY01ZgUIYTV3mX4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzQ0LzUyLzE4/LzM2MF9GXzE0NDUy/MTg4Ml92UnhCQ0xP/ZlRHeWlKSzJkQW00/T3A1TXhzTlVzaUZG/VC5qcGc" alt="Istanbul">
+                <h3>Istanbul</h3>
+                <p>A city that straddles Europe and Asia across the Bosphorus Strait.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/ZfQ5yXskkhB_xc1V8awDzKweIzcyarubLl9iGzBUavU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9scC1j/bXMtcHJvZHVjdGlv/bi5pbWdpeC5uZXQv/MjAxOS0wNi9mMzg1/NjIzOTNiZTczZDU3/MWUxMTFkYmQwYjA2/MGQ1OC13YXQtcGhy/YS1rYWV3LmpwZz9m/aXQ9Y3JvcCZhcj0x/OjEmdz0xMjAwJmF1/dG89Zm9ybWF0JnE9/NzU" alt="Bangkok">
+                <h3>Bangkok</h3>
+                <p>The bustling capital of Thailand.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/gv4p9mv-pQYAUkfFoTp2j7aErAsiN6Khz5wNtKvwmUg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzE2LzgzLzU2/LzM2MF9GXzIxNjgz/NTY2MV9FOW1Ebm5B/YTlLMU1rQWZjaENL/U0EwbTFtZFN4QUFs/RS5qcGc" alt="Cairo">
+                <h3>Cairo</h3>
+                <p>Home to the ancient pyramids and the Sphinx.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/jglLgaXKwD1-2ppserA0FODEdAABrfKz9ZJsVnuttWQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9ib29r/ZXJzLnMzLmFtYXpv/bmF3cy5jb20vcGFn/ZXMvYWU3OWQ0OGMt/NTk5NC00NDlhLWEx/MGEtZjAyYTBlYTQ1/NWIwX0NyaXN0bytS/ZWRlbnRvcitSaW90/dXIuanBn" alt="Rio de Janeiro">
+                <h3>Rio de Janeiro</h3>
+                <p>Famous for its Copacabana beach and Christ the Redeemer statue.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/AmwxEwL80h9EDdk5QiDZnxCPscvNwf_j_KZvOaWj8i4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA4/MzExODYzL3Bob3Rv/L3dpbnRlci1tb3Nj/b3ctY2l0eXNjYXBl/LWF0LXN1bnNldC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/NFJsNjUyVVJ6RUNz/MXBlbzJkVHR4ODg4/cDdOSFcyT0xWN0ZL/TWlkdzVzQT0" alt="Moscow">
+                <h3>Moscow</h3>
+                <p>The capital of Russia, known for its historical architecture.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/5SRmto2kHXZH93bDaiAklSvLgZ6x7LQdoqAcfzTxQQw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzIzLzg3Lzgw/LzM2MF9GXzUyMzg3/ODAyMV9GQnlzVXV4/TFBSelVkRGlFSVhX/cWlLeVZhV1UxOTNn/ai5qcGc" alt="Cape Town">
+                <h3>Cape Town</h3>
+                <p>Known for its harbor and landmarks like Table Mountain.</p>
+            </div>
+            <br>
+        </div>
+        <a href="project.html#destinations" class="cta-button">Back to Popular Destinations</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

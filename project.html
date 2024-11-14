@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fHBhcmlzfGVufDB8fHx8MTY0MjY0MjYyNQ&ixlib=rb-1.2.1&q=80&w=1200');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 30;
+    margin-bottom: 32px;
+}
+
+.cta-button {
+    background-color: #FF5722;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #E64A19;
+}
+
+.destinations {
+    padding: 64px 80px;
+    text-align: center;
+}
+
+.destinations h2 {
+    margin-bottom: 32px;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    gap: 32px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    margin: 16px 0;
+}
+.travel-tips {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.travel-tips h2 {
+    text-align: center;
+    color: #333;
+}
+
+.tip-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tip-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.tip-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .cta-button {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background-color: #ff6347;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .about {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            text-align: center;
+            margin: 15px;
+            flex: 1 1 200px;
+            max-width: 200px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .team-member h3 {
+            margin: 10px 0 5px;
+        }
+        .team-member p {
+            color: #555;
+        }
+        .contact {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .contact h2 {
+            color: #0077cc;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-info h3 {
+            color: #0077cc;
+        }
+        .contact-info p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Travel Explorer</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Explore the World</h1>
+        <p>Your adventure starts here. Discover amazing places to visit.</p>
+        <a href="#destinations" class="cta-button">Discover Now</a>
+    </section>
+
+    <section class="destinations" id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/U3yIKoYPlMMjTvYkfd8HCT2IyP2jkiiPjaCQj5ukG7U/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8w/NC8yNS8wOS8yNi9l/aWZmZWwtdG93ZXIt/MzM0OTA3NV82NDAu/anBn" alt="Paris">
+                <h3>Paris</h3>
+                <p>The city of lights and love.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/_kHVUPOaJIPtiBO8OktlPBY6e-71kA0SPG-A1EM0Lrs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hbGx0/aGF0c2ludGVyZXN0/aW5nLmNvbS93b3Jk/cHJlc3Mvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTMvMDEvaW5j/cmVkaWJsZS1waG90/b2dyYXBocy1uZXct/eW9yay1kZXJlY2hv/LmpwZw" alt="New York">
+                <h3>New York</h3>
+                <p>The city that never sleeps.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/PYL6s1BGxigiO4RscoJqprjoE-B5PbYSN0oI3zANGOE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzc5LzY4LzU4/LzM2MF9GXzE3OTY4/NTg4N19ZanZCZTFx/OTRmRGw3c2lFSVJn/WXZWM241c0dKeUpR/Ti5qcGc" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>A bustling metropolis with rich culture.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://imgs.search.brave.com/JkmZcSBbNbflquHBUlMcLtqE76RDrsBr64AMHy93ByA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzE3LzE5LzE0/LzM2MF9GXzE3MTkx/NDI5X29KYmdzaUVV/eFF5RjNmdnNKaWdD/bWZXdlEwZjJiNHpH/LmpwZw" alt="Sydney">
+                <h3>Sydney</h3>
+                <p>Famous for its Sydney Opera House.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="more-destinations">
+            <h3>Explore More Destinations</h3><br><br>
+            <a href="more-destinations.html" class="cta-button">View All Destinations</a>
+        </div>
+    </section>
+    <section class="travel-tips" id="tips">
+        <h2>Travel Tips</h2>
+        <div class="tip-grid">
+            <div class="tip-card">
+                <img src="https://imgs.search.brave.com/kq7ZoPg6ID3QrmOm4FTly_kcjJJTLu1poAyK8GmmlYE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGdy/YWRlZHBvaW50cy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMDQvVHJhdmVs/LUFjY2Vzc29yaWVz/LUFuZC1Qcm9kdWN0/cy5qcGc_YXV0bz13/ZWJwJmRpc2FibGU9/dXBzY2FsZSZ3aWR0/aD0xMjAw" alt="Packing Essentials">
+                <h3>Packing Essentials</h3>
+                <p>Don't forget to pack these must-haves for a stress-free trip: comfortable clothing, power adapter, travel documents, and a portable charger.</p>
+            </div>
+            <div class="tip-card">
+                <img src="https://imgs.search.brave.com/m01oV-UtyNoKZg0wjo5Js9fcttU4V-e1L9Oy_2SBhV4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzQ2L2Fk/Lzc3LzQ2YWQ3Nzli/NWU4ZTU1MWFjMTY2/YjBhM2NkZjVmZjNj/LmpwZw" alt="Staying Safe Abroad">
+                <h3>Staying Safe Abroad</h3>
+                <p>Research your destination, stay informed about local conditions, and trust your instincts to stay safe while traveling abroad.</p>
+            </div>
+            <div class="tip-card">
+                <img src="https://imgs.search.brave.com/5s0_cHWu3onEWxwHRstHxUaavfxjedm0wsqRH13zsYo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi90cmF2/ZWwtcGxhbm5pbmct/YnVkZ2V0aW5nLWNv/bmNlcHQtNTE4Njc2/OTguanBn" alt="Budgeting for Travel">
+                <h3>Budgeting for Travel</h3>
+                <p>Set a realistic budget, prioritize your spending, and take advantage of travel deals to make the most of your trip.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We're a team of travel enthusiasts dedicated to helping you explore the world. Our mission is to provide you with the best travel tips, recommendations, and inspiration to make your next trip unforgettable.</p>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="https://imgs.search.brave.com/ZtI3oT2X1zjjL24XA0ZY8JfWhgxoWpHrFajh16V7qcI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9m/cm9udC12aWV3LWhh/bmRzb21lLWNvcnBv/cmF0ZS1tYW5fMjMt/MjE0ODMzNjg1NS5q/cGc_c2VtdD1haXNf/aHlicmlk" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="https://imgs.search.brave.com/CGu22albU5Eq6UWiZexqfGESQvrxcIGyQJes5X6Rxqs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hcmFmZWQtbWFu/LXdpdGgtaG9vZGll/LXNtaWxlLWNpcmNs/ZS1nZW5lcmF0aXZl/LWFpXzEwMzU3Njct/MTI4MDguanBnP3Nl/bXQ9YWlzX2h5YnJp/ZA" alt="Jane Smith">
+                <h3>Jane Smith</h3>
+                <p>Travel Writer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://imgs.search.brave.com/MZE2E_kZRwHYekcdOn6b4zNcklE99rBLuqsiTvma2kI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/bG9zZS11cC1wb3J0/cmFpdC15b3VuZy1z/bWlsaW5nLW1hbl8x/NzEzMzctMjAwNjQu/anBnP3NlbXQ9YWlz/X2h5YnJpZA" alt="Bob Johnson">
+                <h3>Bob Johnson</h3>
+                <p>Photographer</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        <div class="contact-info">
+            <h3>Our Contact Information</h3>
+            <p><strong>Email:</strong> support@travelexplorer.com</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Address:</strong> 123 Travel Lane, Adventure City, CA 90210, USA</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
